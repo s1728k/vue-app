@@ -1,6 +1,6 @@
-# vue-app
+# vue-admin
 
-> A Vue.js project
+> Sunil Kumar T - Developments
 
 ## Build Setup
 
