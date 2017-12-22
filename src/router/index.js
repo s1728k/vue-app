@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import HelloWorld from '@/components/HelloWorld'
+import FirstPage from '@/components/FirstPage'
+import SecondPage from '@/components/SecondPage'
 
-const HelloWorld = () => import(/* webpackChunkName: "group-foo" */ '@/components/HelloWorld')
-const FirstPage = () => import(/* webpackChunkName: "group-foo" */ '@/components/FirstPage')
-const SecondPage = () => import(/* webpackChunkName: "group-foo" */ '@/components/SecondPage')
+// const HelloWorld = () => import(/* webpackChunkName: "group-foo" */ '@/components/HelloWorld')
+// const FirstPage = () => import(/* webpackChunkName: "group-foo" */ '@/components/FirstPage')
+// const SecondPage = () => import(/* webpackChunkName: "group-foo" */ '@/components/SecondPage')
 
 Vue.use(Router)
 
