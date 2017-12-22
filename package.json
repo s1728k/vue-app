@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Sunil Kumar T - Developments",
   "author": "Sunil Kumar T",
-  "homepage": "https://github.com/s1728k/vue-app",
+  "homepage": "https://s1728k.github.io//vue-app",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
