@@ -14,13 +14,14 @@
 // export default {
 //   name: 'app'
 // }
-import Vue from 'vue'
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default-dark.css' // This line here
-import 'vue-material/dist/theme/engine.scss'
+// import Vue from 'vue'
+// import VueMaterial from 'vue-material'
+import 'materialize-css/dist/js/materialize.min.js'
+import 'materialize-css/dist/css/materialize.min.css'
+// import 'vue-material/dist/vue-material.min.css'
+// import 'vue-material/dist/theme/default-dark.css' // This line here
 
-Vue.use(VueMaterial)
+// Vue.use(VueMaterial)
 export default {
   computed: {
     username () {
