@@ -74,7 +74,20 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      }
+      },
+      // {
+      //   test: /\.scss$/,
+      //   use: [{
+      //       loader: "style-loader"
+      //   }, {
+      //       loader: "css-loader"
+      //   }, {
+      //       loader: "sass-loader",
+      //       // options: {
+      //       //     includePaths: [path.resolve(__dirname, 'node_modules/vue-material/theme/scss')]
+      //       // }
+      //   }
+      // }
     ]
   },
   node: {
