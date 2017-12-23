@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <carousel-3d>
+    <!-- <carousel-3d>
       <slide :index="0">
         Slide 1 Content
       </slide>
@@ -16,7 +16,7 @@
       <slide :index="4">
         Slide 2 Content
       </slide>
-    </carousel-3d>
+    </carousel-3d> -->
 <!--     <div class="carousel">
       <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
       <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
@@ -65,13 +65,13 @@
 </template>
 
 <script>
-import { Carousel3d, Slide } from 'vue-carousel-3d'
+// import { Carousel3d, Slide } from 'vue-carousel-3d'
 export default {
   name: 'Home',
-  components: {
-    Carousel3d,
-    Slide
-  },
+  // components: {
+  //   Carousel3d,
+  //   Slide
+  // },
   created: function () {
     // `this` points to the vm instance
     console.log('a is:')

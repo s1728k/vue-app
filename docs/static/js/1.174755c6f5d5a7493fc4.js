@@ -1,0 +1,2 @@
+webpackJsonp([1],{"+TdM":function(e,s){},sPVl:function(e,s,t){"use strict";Object.defineProperty(s,"__esModule",{value:!0});var i={render:function(){var e=this.$createElement,s=this._self._c||e;return s("div",{staticClass:"hello"},[s("h1",[this._v(this._s(this.msg))]),this._v(" "),s("h2",[this._v("This is second page")])])},staticRenderFns:[]},n=t("VU/8")({name:"FirstPage",data:function(){return{msg:"This is my second page"}}},i,!1,function(e){t("+TdM")},"data-v-d463fd9e",null);s.default=n.exports}});
+//# sourceMappingURL=1.174755c6f5d5a7493fc4.js.map

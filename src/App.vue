@@ -54,6 +54,32 @@
       </li>
     </ul> -->
     <!-- <md-button class="waves-effect waves-light">Hello, world!</md-button> -->
+    <el-row>
+  <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+</el-row>
+<el-row>
+  <el-col :span="12"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="12"><div class="grid-content bg-purple-light"></div></el-col>
+</el-row>
+<el-row>
+  <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="8"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+</el-row>
+<el-row>
+  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+</el-row>
+<el-row>
+  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+</el-row>
     <router-view/>
   </div>
 </template>
@@ -75,9 +101,9 @@
 // import 'vue-material-components/assets/css/materialize.min.css'
 // Vue.use(VueMaterialComponents)
 
-import Vue from 'vue'
-import VueCarousel from 'vue-carousel'
-Vue.use(VueCarousel)
+// import Vue from 'vue'
+// import VueCarousel from 'vue-carousel'
+// Vue.use(VueCarousel)
 
 // import 'material-icons/css/material-icons.min.css'
 // import 'materialize-css/dist/css/materialize.min.css'
@@ -119,4 +145,32 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }*/
+
+  .el-row {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .el-col {
+    border-radius: 4px;
+  }
+  .bg-purple-dark {
+    background: #99a9bf;
+  }
+  .bg-purple {
+    background: #d3dce6;
+  }
+  .bg-purple-light {
+    background: #e5e9f2;
+  }
+  .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+  .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+  }
+  
 </style>

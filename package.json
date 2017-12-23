@@ -16,6 +16,7 @@
     "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
+    "element-ui": "^2.0.8",
     "jquery-ui": "^1.12.1",
     "material-icons": "^0.1.0",
     "materialize-css": "^0.100.2",
