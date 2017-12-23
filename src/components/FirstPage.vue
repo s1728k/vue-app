@@ -1,95 +1,35 @@
 <template>
-    <v-container grid-list-md text-xs-center>
-      <v-layout row wrap>
-        <v-flex xs12>
-          <v-card dark color="primary">
-            <v-card-text class="px-0">12</v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs6 v-for="i in 2" :key="i">
-          <v-card dark color="secondary">
-            <v-card-text class="px-0">6</v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs4 v-for="i in 3" :key="i">
-          <v-card dark color="primary">
-            <v-card-text class="px-0">4</v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs3 v-for="i in 4" :key="i">
-          <v-card dark color="secondary">
-            <v-card-text class="px-0">3</v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs2 v-for="i in 6" :key="i">
-          <v-card dark color="primary">
-            <v-card-text class="px-0">2</v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs1 v-for="i in 12" :key="i">
-          <v-card dark color="secondary">
-            <v-card-text class="px-0">1</v-card-text>
-          </v-card>
-        </v-flex>
-      </v-layout>
-    </v-container>
-</template>
-
-<script>
-  // import 'vue-material/dist/theme/engine.scss'
-  export default {
-    name: 'FirstPage'
-  }
-</script>
-
-<style lang="scss" scoped>
-
-  // @import '~vue-material/dist/theme/engine';
-
-  // .elevation-demo {
-  //   padding: 16px;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-
-  // .md-content {
-  //   width: 100px;
-  //   height: 100px;
-  //   margin: 24px;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-</style>
-<!-- 
-<template>
-  <div class="md-layout">
-    <div class="md-layout-item"></div>
-    <div class="md-layout-item"></div>
-    <div class="md-layout-item"></div>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+    <h2>This is first page</h2>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'FistPage'
+export default {
+  name: 'FirstPage',
+  data () {
+    return {
+      msg: 'This is my first page'
+    }
   }
+}
 </script>
 
-<style lang="scss" scoped>
-  .md-layout-item {
-    height: 40px;
-
-    &:nth-child(1) {
-      background: md-get-palette-color(grey, 300);
-    }
-
-    &:nth-child(2) {
-      background: md-get-palette-color(grey, 400);
-    }
-
-    &:nth-child(3) {
-      background: md-get-palette-color(grey, 500);
-    }
-  }
-</style> -->
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+</style>

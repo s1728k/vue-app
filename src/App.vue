@@ -1,45 +1,93 @@
 <template>
-  <v-app>
-    <!-- <v-navigation-drawer app></v-navigation-drawer> -->
-    <v-toolbar app>
-      <router-link to="/">Home</router-link>
-      <router-link to="/foo">Go to Foo</router-link>
-      <router-link to="/bar">Go to Bar</router-link>
-    </v-toolbar>
-    <v-content>
-      <v-container fluid>
-        <router-view></router-view>
-      </v-container>
-    </v-content>
-    <v-footer app></v-footer>
-  </v-app>
-  <!-- <div id="app">
-    <h1>Hello App!</h1>
-    <p>
-      <router-link to="/">Home</router-link>
-      <router-link to="/foo">Go to Foo</router-link>
-      <router-link to="/bar">Go to Bar</router-link>
-    </p>
+  <div id="app">
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mi mi-36 mi-menu"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/about">About</router-link></li>
+          <li><router-link to="/portfolio">Portfolio</router-link></li>
+          <li><router-link to="/contact">Contact</router-link></li>
+          <li><a class="dropdown-button" style="margin-top: -2px;" href="#!" data-activates="dropdown1">Dropdown<i class="mi mi-arrow-drop-down"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul id="slide-out" class="side-nav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="http://via.placeholder.com/350x150">
+        </div>
+        <a href="#!user"><img class="circle" src="http://via.placeholder.com/350x150"></a>
+        <a href="#!name"><span class="white-text name">John Doe</span></a>
+        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+       <li><a href="#!">First Sidebar Link</a></li>
+      <li><a href="#!">Second Sidebar Link</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">First</a></li>
+                <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- <md-button class="waves-effect waves-light">Hello, world!</md-button> -->
     <router-view/>
-  </div> -->
+  </div>
 </template>
 
 <script>
-// export default {
-//   name: 'app'
-// }
-import Vue from 'vue'
+// import Vue from 'vue'
 // import VueMaterial from 'vue-material'
-import 'materialize-css/dist/js/materialize.min.js'
-import 'materialize-css/dist/css/materialize.min.css'
 // import 'vue-material/dist/vue-material.min.css'
-// import 'vue-material/dist/theme/default-dark.css' // This line here
-
+// import 'vue-material/dist/theme/default.css' // This line here
 // Vue.use(VueMaterial)
-import Vuetify from 'vuetify'
-import('vuetify/dist/vuetify.min.css')
-Vue.use(Vuetify)
+
+// import Vue from 'vue'
+// import Vuetify from 'vuetify'
+// import 'vuetify/dist/vuetify.min.css'
+// Vue.use(Vuetify)
+
+// 0. Require Vue 
+// import Vue from 'vue'
+// import VueMaterialComponents from 'vue-material-components'
+// import 'vue-material-components/assets/css/materialize.min.css'
+// Vue.use(VueMaterialComponents)
+
+import Vue from 'vue'
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
+
+
+import 'material-icons/css/material-icons.min.css'
+import 'materialize-css/dist/css/materialize.min.css'
+import 'jquery/dist/jquery.min.js'
+import 'materialize-css/dist/js/materialize.min.js'
+
 export default {
+  name: 'app',
   computed: {
     username () {
       // We will see what `params` is shortly
@@ -54,10 +102,17 @@ export default {
     }
   }
 }
+$(document).ready(function () {
+  $('.dropdown-button').dropdown()
+  $('.button-collapse').sideNav()
+  $('.collapsible').collapsible()
+  $('.scrollspy').scrollSpy()
+  $('.carousel').carousel()
+  // $('.carousel.carousel-slider').carousel({fullWidth: true});
+})
 </script>
 
-<style lang="styl">
-@import '~vuetify/src/stylus/main.styl'
+<style>
 /*#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

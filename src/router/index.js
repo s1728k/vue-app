@@ -1,20 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import FirstPage from '@/components/FirstPage'
-import SecondPage from '@/components/SecondPage'
+// import Login from '@/components/Login'
 
-// const HelloWorld = () => import(/* webpackChunkName: "group-foo" */ '@/components/HelloWorld')
-// const FirstPage = () => import(/* webpackChunkName: "group-foo" */ '@/components/FirstPage')
-// const SecondPage = () => import(/* webpackChunkName: "group-foo" */ '@/components/SecondPage')
+/* webpackChunkName: "group-foo" */
+const Login = () => import('@/components/Login')
+const Home = () => import('@/components/Home')
+const HelloWorld = () => import('@/components/HelloWorld')
+const FirstPage = () => import('@/components/FirstPage')
+const SecondPage = () => import('@/components/SecondPage')
 
 Vue.use(Router)
 
 const router = new Router({
   routes: [
-    { path: '/', name: 'HelloWorld', component: HelloWorld },
-    { path: '/foo', name: 'FirstPage', component: FirstPage },
-    { path: '/bar', name: 'SecondPage', component: SecondPage, meta: { requiresAuth: true } }
+    { path: '/login', name: 'Login', component: Login },
+    { path: '/', name: 'Home', component: Home },
+    { path: '/about', name: 'HelloWorld', component: HelloWorld },
+    { path: '/portfolio', name: 'FirstPage', component: FirstPage },
+    { path: '/contact', name: 'SecondPage', component: SecondPage, meta: { requiresAuth: true } }
   ]
 })
 

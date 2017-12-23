@@ -16,10 +16,15 @@
     "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
+    "jquery-ui": "^1.12.1",
+    "material-icons": "^0.1.0",
     "materialize-css": "^0.100.2",
     "vue": "^2.5.2",
+    "vue-carousel": "^0.6.5",
+    "vue-carousel-3d": "^0.1.19",
     "vue-gh-pages": "^1.7.0",
     "vue-material": "^1.0.0-beta-7",
+    "vue-material-components": "^0.3.4",
     "vue-router": "^3.0.1",
     "vuetify": "^0.17.5"
   },
