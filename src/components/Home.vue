@@ -17,7 +17,7 @@
         Slide 2 Content
       </slide>
     </carousel-3d>
-    <div class="carousel">
+<!--     <div class="carousel">
       <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
       <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
       <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
@@ -59,7 +59,7 @@
         <li><a href="#initialization">Intialization</a></li>
       </ul>
     </div>
-  </div>
+  </div> -->
   </div>
 
 </template>

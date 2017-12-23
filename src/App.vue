@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content">
+    <!-- <ul id="dropdown1" class="dropdown-content">
       <li><a href="#!">one</a></li>
       <li><a href="#!">two</a></li>
       <li class="divider"></li>
@@ -52,7 +52,7 @@
           </li>
         </ul>
       </li>
-    </ul>
+    </ul> -->
     <!-- <md-button class="waves-effect waves-light">Hello, world!</md-button> -->
     <router-view/>
   </div>
@@ -70,21 +70,19 @@
 // import 'vuetify/dist/vuetify.min.css'
 // Vue.use(Vuetify)
 
-// 0. Require Vue 
 // import Vue from 'vue'
 // import VueMaterialComponents from 'vue-material-components'
 // import 'vue-material-components/assets/css/materialize.min.css'
 // Vue.use(VueMaterialComponents)
 
 import Vue from 'vue'
-import VueCarousel from 'vue-carousel';
-Vue.use(VueCarousel);
+import VueCarousel from 'vue-carousel'
+Vue.use(VueCarousel)
 
-
-import 'material-icons/css/material-icons.min.css'
-import 'materialize-css/dist/css/materialize.min.css'
-import 'jquery/dist/jquery.min.js'
-import 'materialize-css/dist/js/materialize.min.js'
+// import 'material-icons/css/material-icons.min.css'
+// import 'materialize-css/dist/css/materialize.min.css'
+// import 'jquery/dist/jquery.min.js'
+// import 'materialize-css/dist/js/materialize.min.js'
 
 export default {
   name: 'app',
@@ -102,14 +100,14 @@ export default {
     }
   }
 }
-$(document).ready(function () {
-  $('.dropdown-button').dropdown()
-  $('.button-collapse').sideNav()
-  $('.collapsible').collapsible()
-  $('.scrollspy').scrollSpy()
-  $('.carousel').carousel()
-  // $('.carousel.carousel-slider').carousel({fullWidth: true});
-})
+// $(document).ready(function () {
+//   $('.dropdown-button').dropdown()
+//   $('.button-collapse').sideNav()
+//   $('.collapsible').collapsible()
+//   $('.scrollspy').scrollSpy()
+//   $('.carousel').carousel()
+//   // $('.carousel.carousel-slider').carousel({fullWidth: true});
+// })
 </script>
 
 <style>
